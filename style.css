@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    
+
+}
+html,body{
+    overflow-x: hidden;
+    height: 100%; 
+}
+
+body{
+    font-family:arial, sans-serif;
+    background:#fff;
+    padding:0;
+    margin:0;
+}
+.header{
+   background:#ee5253 ;
+   width: 100%;
+   height: 60px;
+   position: fixed;
+   z-index: 1;    
+}
+.sidebaricontoggle{
+    width: 22px;
+    height: 22px;
+    z-index: 20;
+    top: 22px;
+    left: 15px 22px;
+    cursor: pointer;
+    position: fixed;
+}
+#opensidebarmenu:checked~#sidebarmenu{
+transform: translateX(0px);
+}
+.main{
+position: absolute;
+left: 550p22px;
+box-sizing: content-box;
+}
+#sidebarmenu{
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:250px 22px;
+    margin-top: 60px 22px;
+    background:#2e86de;
+    transform: translateX(-250px);
+    transition: translatex 250ms ease-in-out;
+    background: #2e86de;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu li{
+    color:#fff ;
+    border-bottom: 1px solid rgba(255, 255, 255,0.10d);
+}
+.menu li a{
+    color:#fff ;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.spinner{
+    height: 3px;
+    background: #fff;
+    transition: all 0.3;
+}
+.spinner.middle,
+.spinner.bottom{
+ margin-top: 3px; ;
+}
+#opensidebarmenu:checked~.sidebaricontoggle> .spinner.middle{
+    opacity:0;
+}
+#opensidebarmenu:checked~.sidebaricontoggle> .spinner.top{
+    transform:rotate(135deg) ;
+    margin-top: 8px;
+}
+#opensidebarmenu:checked~.sidebaricontoggle> .spinner.bottom{
+    transform:rotate(-135deg) ;
+    margin-top: -9px;
+}
+input#openSidebarMenu{
+    display: none;
+}
+#box{
+height: 500px;
+width: 600px;
+top: 50px;
+}
+.whatsappimage1{
+  position: fixed ;
+  left: 970px;
+top: 55px;
+width: 400px;
+border-radius: 80px;
+
+}
+
+#box{
+    background-color: aquamarine;  
+    background-image: url(1.jpg) ;
+    background-size: 500px;
+    padding-top: 100px;
+    padding: 30px;
+    background-position:100%;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    width: 500px;
+    position: absolute;
+    left: 500px;
+     
+}
+     .box1{
+       
+       box-sizing:border-box;
+     }
+    #text{
+        box-sizing: content-box;
+        position: relative;
+        left: 100px;
+        top: 20px;
+        border: 100px;
+        width: 400px;
+        padding: 0;
+        margin: 0;
+        border-color: rgb(128, 184, 44);
+        z-index: -10;
+        background: #dfbdbd;
+    }
+    .navbar{
+        background-color: red;
+          position: relative;
+          left: 40px;
+       margin-left: 5px;
+       border-radius: 4px;
+       width: 120px;
+
+    }
+    .navbar ul{
+        overflow: auto;
+    }
+    .navbar li{
+        float: left;
+        list-style: none;
+        margin: 1px;
+        
+    }
+    .navbar li a{
+        padding: 3px;
+        text-decoration: none;
+        
+    }
+    .navbar li a:hover{
+        background-color: #fff;
+        color: black;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .search{
+    float: right;
+    }
+    .navbar input{
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 2px 4px;
+        width: 170px;
+    }
+    .bhanu img{
+        border-radius: 27px;
+        width: 150px;
+        background-size: cover;
+    }
+
+
+
+
